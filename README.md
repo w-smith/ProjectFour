@@ -7,3 +7,7 @@ This is a web app that will allow users to save their favorite images from their
 I will be using Firebase for user authentication and database management. 
 
 I will be using Angular for the front end framework (I think). 
+
+
+<h3>Trello User Stories</h3>
+https://trello.com/b/b7UE097P/meme-locker
