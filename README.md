@@ -11,3 +11,11 @@ I will be using Angular for the front end framework (I think).
 
 <h3>Trello User Stories</h3>
 https://trello.com/b/b7UE097P/meme-locker
+
+
+
+<br>
+<br>
+<br>
+
+<img src="https://img.memey.com/1/1/funny-stuck-kid-locker.jpg"></img>
