@@ -14,3 +14,29 @@
 .dropdown-menu {
     font-size: 1em;
 }
+
+.comingsoon {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 25vh 0 0 0;
+
+}
+
+.comingsoontext {
+    font-size: 5em;
+
+}
+
+.homeh1 {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 5em;
+    margin: 10vh auto;
+}
+
+.homeh2 {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 10vh auto;
+    font-size: 3em;
+}

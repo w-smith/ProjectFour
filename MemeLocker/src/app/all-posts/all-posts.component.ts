@@ -18,7 +18,7 @@ export class AllPostsComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
 
-    this.allRef = firebase.database().ref('allposts').limitToFirst(5);
+    this.allRef = firebase.database().ref('allposts').limitToFirst(8);
     this.allRef.on('child_added', data => {
       this.all.push({
         key: data.key,
@@ -32,7 +32,7 @@ export class AllPostsComponent implements OnInit, OnDestroy {
       const lastLoadedPost = _.last(this.all);
       const lastLoadedPostKey = lastLoadedPost.key;
 
-      this.loadMoreRef = firebase.database().ref('allposts').startAt(null, lastLoadedPostKey).limitToFirst(5 + 1);
+      this.loadMoreRef = firebase.database().ref('allposts').startAt(null, lastLoadedPostKey).limitToFirst(8 + 1);
 
       this.loadMoreRef.on('child_added', data => {
 

@@ -24,11 +24,6 @@ export class PostComponent implements OnInit {
       .then(snapshot => {
         this.imageData = snapshot.val();
         this.defaultImage = this.imageData.fileUrl;
-
-        // if (this.imageData.uploadedBy.uid === uid) {
-        //   this.displayFavoritesButton = false;
-        //   this.displayFollowButton = false;
-        // }
       });
 
   }
