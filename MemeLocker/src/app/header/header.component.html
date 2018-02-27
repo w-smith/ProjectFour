@@ -1,0 +1,22 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">MemeLocker</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">HOME</a></li>
+      <li routerLinkActive="active" *ngIf="isLoggedIn"><a routerLink="/allposts">ERRYTHANG</a></li>
+      <li routerLinkActive="active" *ngIf="isLoggedIn"><a routerLink="/following">MY MANS AND THEM</a></li>
+      <li routerLinkActive="active" *ngIf="isLoggedIn"><a routerLink="/favorites">FAVEZ</a></li>
+      <li routerLinkActive="active" *ngIf="isLoggedIn"><a routerLink="/myposts">MINES</a></li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li routerLinkActive="active"><a routerLink="/signup">SIGNUP</a></li>
+      <li routerLinkActive="active"><a routerLink="/login">LOGIN</a></li>
+      <li routerLinkActive="active" *ngIf="isLoggedIn"><a routerLink="/logout">LOGOUT</a></li>
+    </ul>
+
+  </div>
+</nav>
+
