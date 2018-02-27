@@ -12,9 +12,17 @@
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
-      <li routerLinkActive="active"><a routerLink="/signup">SIGNUP</a></li>
-      <li routerLinkActive="active"><a routerLink="/login">LOGIN</a></li>
-      <li routerLinkActive="active" *ngIf="isLoggedIn"><a routerLink="/logout">LOGOUT</a></li>
+        <li class="dropdown" *ngIf="isLoggedIn">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript: void(0)"><span class="user-name-display">{{name}}</span>
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:void(0)"><span class="user-title">Email: </span><span class="user-data">{{email}}</span></a></li>
+              <li><a href="javascript:void(0)"><span class="user-title">User ID: </span><span class="user-data">{{uid}}</span></a></li>
+            </ul>
+          </li>
+      <li routerLinkActive="active" *ngIf="!isLoggedIn"><a routerLink="/signup">SIGNUP</a></li>
+      <li routerLinkActive="active" *ngIf="!isLoggedIn"><a routerLink="/login">LOGIN</a></li>
+      <li *ngIf="isLoggedIn" (click)='onLogout()'><a href="#">LOGOUT</a></li>
     </ul>
 
   </div>

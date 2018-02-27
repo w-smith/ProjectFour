@@ -3,7 +3,14 @@
 
 .navbar {
     font-family: 'Shadows Into Light', cursive;
-    font-size: 1.5em;
+    font-size: 1.75em;
 
 }
 
+.navbar-brand {
+    font-size: 1.8em;
+}
+
+.dropdown-menu {
+    font-size: 1em;
+}
